@@ -60,17 +60,17 @@ footer {
 .maincontent {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding-bottom: 4rem;
 }
 
 .box {
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .quote {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     text-align: center;
 }
 
@@ -80,12 +80,22 @@ footer {
 }
 
 .abouttext {
-    grid-column: 3 / span 2;
+    grid-column: 1 / span 2;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.contactheader {
+    padding-top: 3.5rem;
+    grid-column: 1 / span 2;
+    text-align: center;
 }
 
 .contacttext {
-    padding-top: 2rem;
-    grid-column: 2 / span 2;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+    grid-column: 1 / span 2;
     text-align: center;
 }
 
@@ -99,14 +109,14 @@ footer {
 
 #about {
     background-image: url(../img/Backgrounds.jpg);
-    background-position: 0 -100px;
-    background-size: cover;
+    background-position: 0 -108px;
+    background-size: 165%, cover;
 }
 
 #contact {
     background-image: url(../img/undefined\ -\ Imgur.png);
-    background-position: 0 -150px;
-    background-size: cover;
+    background-position: 0 -87px;
+    background-size: 150%, cover;
 }
 
 a:link {
@@ -121,4 +131,61 @@ a:visited {
 a:hover,
 a:focus {
     color: black;
+}
+
+@media screen and (min-width: 1080px) {
+    .header {
+        width: 100%;
+    }
+
+    .maincontent {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-bottom: 4rem;
+    }
+
+    .box {
+        padding-top: 3rem;
+    }
+    
+    .quote {
+        grid-column: 2 / span 2;
+        text-align: center;
+        border-bottom: 2px solid;
+    }
+    
+    .aboutmain {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+    
+    .abouttext {
+        grid-column: 3 / span 2;
+    }
+
+    .contactheader {
+        padding-top: 3.5rem;
+        grid-column: 2 / span 2;
+        text-align: center;
+    }
+    
+    .contacttext {
+        padding-top: 2rem;
+        grid-column: 2 / span 2;
+        text-align: center;
+    }
+
+    #about {
+        background-image: url(../img/Backgrounds.jpg);
+        background-position: 0 -100px;
+        background-size: cover;
+    }
+    
+    #contact {
+        background-image: url(../img/undefined\ -\ Imgur.png);
+        background-position: 0 -150px;
+        background-size: cover;
+    }
 }
